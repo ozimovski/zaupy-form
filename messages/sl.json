@@ -1,0 +1,317 @@
+{
+  "common": {
+    "loading": "Nalaganje...",
+    "error": "Napaka",
+    "retry": "Poskusi znova",
+    "tryAgain": "Poskusi znova",
+    "submit": "Pošlji",
+    "cancel": "Prekliči",
+    "close": "Zapri",
+    "search": "Iskanje",
+    "contact": "Kontakt",
+    "home": "Domov",
+    "next": "Naprej",
+    "previous": "Nazaj",
+    "save": "Shrani",
+    "delete": "Izbriši",
+    "edit": "Uredi",
+    "view": "Poglej"
+  },
+  "navigation": {
+    "submitReport": {
+      "title": "Pošlji prijavo",
+      "description": "Varno in zaupno prijavite pomisleke"
+    },
+    "trackReport": {
+      "title": "Spremljaj prijavo",
+      "description": "Preverite status vaše prijave"
+    },
+    "faq": {
+      "title": "Pogosta vprašanja",
+      "description": "Poiščite pomoč in odgovore"
+    },
+    "secureConfidential": "Varno in zaupno",
+    "mobileMenu": {
+      "securityTitle": "Varno in zaupno",
+      "securityDescription": "Vse prijave so šifrirane in zaščitene"
+    }
+  },
+  "home": {
+    "title": "Dobrodošli na portalu za prijavljanje kršitev",
+    "subtitle": "Varno in zaupno prijavite kršitve predpisov, ki ste jih pridobili v svojem delovnem okolju.",
+    "submitReport": {
+      "title": "Pošlji prijavo",
+      "subtitle": "Prijavi kršitev",
+      "description": "Prijavite kršitve predpisov, politik ali etičnih standardov."
+    },
+    "trackReport": {
+      "title": "Spremljaj prijavo",
+      "subtitle": "Preveri status prijave",
+      "description": "Uporabite svojo identifikacijsko številko za spremljanje statusa in napredka svoje prijave."
+    },
+    "questions": {
+      "title": "Vprašanja in pomoč",
+      "subtitle": "Pridobite navodila in odgovore",
+      "description": "Poiščite odgovore na pogosta vprašanja o postopku prijavljanja, zasebnosti in vaših pravicah."
+    },
+    "footer": {
+      "contact": "Kontakt:"
+    },
+    "hero": {
+      "secureConfidential": "Varno in zaupno",
+      "available247": "Na voljo 24/7",
+      "howItWorks": "Kako deluje",
+      "howItWorksSubtitle": "Enostavno, varno in zaupno prijavljanje v treh korakih",
+      "readyToMakeDifference": "Pripravljeni narediti razliko?",
+      "yourVoiceMatters": "Vaš glas šteje. Varno prijavite pomisleke in pomagajte ustvariti boljše delovno okolje za vse."
+    }
+  },
+  "form": {
+    "title": "Pošljite prijavo kršitve",
+    "subtitle": "Varno in zaupno prijavite kršitve predpisov ali etičnih standardov.",
+    "category": {
+      "label": "Kategorija kršitve",
+      "placeholder": "Izberite kategorijo...",
+      "required": "Prosimo, izberite kategorijo kršitve."
+    },
+    "subject": {
+      "label": "Zadeva",
+      "placeholder": "Kratko opišite problem...",
+      "required": "Prosimo, vnesite zadevo prijave."
+    },
+    "description": {
+      "label": "Podroben opis",
+      "placeholder": "Opišite incident podrobno...",
+      "required": "Prosimo, opišite incident."
+    },
+    "files": {
+      "label": "Priložite dokumente (neobvezno)",
+      "helper": "Podprti formati: {formats}. Maksimalna velikost: {maxSize}MB",
+      "maxFiles": "Maksimalno {count} datotek"
+    },
+    "anonymous": {
+      "label": "Anonimna prijava",
+      "description": "Vaša identiteta ne bo zabeležena ali deljena."
+    },
+    "tracking": {
+      "label": "Možnosti spremljanja",
+      "public": {
+        "title": "Javno spremljanje",
+        "description": "Vašo prijavo lahko spremljate samo z identifikacijsko številko. Vsakdo z identifikacijsko številko lahko vidi status."
+      },
+      "private": {
+        "title": "Zasebno spremljanje",
+        "description": "Vaša prijava zahteva identifikacijsko številko in geslo za ogled statusa.",
+        "passwordLabel": "Geslo za spremljanje",
+        "passwordPlaceholder": "Vnesite varno geslo...",
+        "passwordHelper": "Izberite geslo za zaščito spremljanja vaše prijave. To boste potrebovali skupaj z identifikacijsko številko za preverjanje statusa."
+      }
+    },
+    "priority": {
+      "label": "Stopnja nujnosti",
+      "low": "Nizka",
+      "medium": "Srednja",
+      "high": "Visoka",
+      "urgent": "Nujna"
+    },
+    "whatToReport": {
+      "title": "Kaj prijaviti"
+    },
+    "privacy": {
+      "title": "Vaša zasebnost je zaščitena",
+      "confidential": "Vse prijave so obravnavane zaupno",
+      "noIdentity": "Ni vam potrebno razkriti identitete",
+      "anonymousProtected": "Anonimni prijavitelji niso razkrite",
+      "secureEncrypted": "Varna šifrirana komunikacija"
+    },
+    "footer": {
+      "afterSubmission": "Po oddaji boste prejeli identifikacijsko številko za spremljanje statusa vaše prijave.",
+      "keepSafe": "Shranite te podatke varno, saj so edini način za spremljanje vaše prijave.",
+      "goodFaith": "Prijave je treba oddati v dobri veri glede njihove vsebine."
+    },
+    "submit": "Pošlji prijavo",
+    "submitting": "Pošiljanje...",
+    "success": {
+      "title": "Prijava uspešno poslana",
+      "message": "Vaša prijava je bila prejeta in bo obravnavana. Uporabite spodnjo identifikacijsko številko za spremljanje napredka.",
+      "trackingId": "Identifikacijska številka:",
+      "saveId": "Prosimo, shranite to številko za poznejše spremljanje.",
+      "trackReport": "Spremljaj prijavo",
+      "submitAnother": "Pošlji novo prijavo"
+    },
+    "errors": {
+      "configError": "Napaka konfiguracije",
+      "configErrorDescription": "Ni možno naložiti konfiguracije obrazca.",
+      "submissionFailed": "Pošiljanje prijave ni uspelo",
+      "validationFailed": "Prosimo, popravite naslednje napake:",
+      "trackingFailed": "Sledenje prijavi ni uspelo",
+      "tryAgain": "Prosimo, poskusite znova.",
+      "fileTooBig": "Datoteka je prevelika",
+      "fileTypeNotAllowed": "Tip datoteke ni dovoljen",
+      "tooManyFiles": "Preveč datotek"
+    }
+  },
+  "tracking": {
+    "title": "Spremljajte svojo prijavo",
+    "subtitle": "Vnesite svojo identifikacijsko številko za preverjanje statusa prijave.",
+    "trackingId": {
+      "label": "Identifikacijska številka",
+      "placeholder": "npr. DEV-2024-001234",
+      "helper": "Vnesite identifikacijsko številko, ki ste jo prejeli po oddaji prijave"
+    },
+    "password": {
+      "label": "Geslo (neobvezno)",
+      "placeholder": "Vnesite geslo, če je vaša prijava zasebna",
+      "helper": "Potrebno samo za prijave z zasebnim spremljanjem"
+    },
+    "submit": "Spremljaj prijavo",
+    "tracking": "Preverjanje statusa...",
+    "help": {
+      "title": "Potrebujete pomoč pri iskanju identifikacijske številke?",
+      "tips": [
+        "Preverite vaš e-poštni naslov za potrditev po oddaji prijave",
+        "Identifikacijske številke običajno se začnejo s črkami kot so \"DEV-\" ali \"RPT-\"",
+        "Za zasebne prijave boste potrebovali geslo, ki ste ga nastavili med oddajo"
+      ]
+    },
+    "found": {
+      "title": "Prijava najdena",
+      "trackingId": "Identifikacijska številka",
+      "subject": "Zadeva",
+      "submitted": "Oddano",
+      "lastUpdated": "Zadnja posodobitev",
+      "status": "Status"
+    },
+    "notFound": {
+      "title": "Prijava ni najdena",
+      "message": "Ne moremo najti prijave s podano identifikacijsko številko. Prosimo, preverite številko in poskusite znova.",
+      "tips": [
+        "Prepričajte se, da ste vnesli celotno identifikacijsko številko",
+        "Preverite, ali je potrebno geslo za zasebne prijave",
+        "Kontaktirajte podporo, če težave vztrajajo"
+      ]
+    },
+    "timeline": {
+      "title": "Časovnica in posodobitve",
+      "noUpdates": "Posodobitve še niso na voljo",
+      "noUpdatesDescription": "Tukaj bomo objavljali posodobitve, ko bo vaša prijava pregledana"
+    },
+    "status": {
+      "received": "Prejeto",
+      "submitted": "Oddano",
+      "in_review": "V pregledu",
+      "under_review": "V pregledu",
+      "reviewing": "Pregled",
+      "investigating": "Preiskovanje",
+      "in_progress": "V teku",
+      "completed": "Zaključeno",
+      "resolved": "Rešeno",
+      "closed": "Zaprto",
+      "rejected": "Zavrnjeno",
+      "dismissed": "Zavrženo",
+      "on_hold": "Zadržano",
+      "paused": "Začasno ustavljeno"
+    }
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "legalPrivacy": "Pravne & Zasebnost",
+    "privacyPolicy": "Pravilnik o zasebnosti",
+    "confidentialText": "Vse prijave so obravnavane zaupno in v skladu z veljavno zakonodajo.",
+    "allRightsReserved": "Vse pravice pridržane.",
+    "poweredBy": "Zagotavlja Zaupy Forms",
+    "secure": "Varno"
+  },
+  "questions": {
+    "title": "Pogosto zastavljena vprašanja",
+    "subtitle": "Poiščite odgovore na pogosta vprašanja o prijavljanju, zasebnosti in postopku preiskave.",
+    "search": "Iskanje vprašanj...",
+    "categories": {
+      "all": "Vsa vprašanja",
+      "general": "Splošno",
+      "privacy": "Zasebnost in varnost",
+      "process": "Postopek",
+      "technical": "Tehnično"
+    },
+    "noResults": {
+      "title": "Ni najdenih vprašanj",
+      "message": "Poskusite prilagoditi iskalne izraze ali filter kategorij."
+    },
+    "contact": {
+      "title": "Še vedno imate vprašanja?",
+      "message": "Če niste našli odgovora, ki ga iščete, se ne oklevajte obrniti na nas.",
+      "button": "Kontaktiraj podporo"
+    },
+    "faqs": [
+      {
+        "question": "Kaj je prijavljanje kršitev?",
+        "answer": "Prijavljanje kršitev je dejanje poročanja o nepravilnostih, nezakonitih dejavnostih ali kršitvah politik podjetja ali predpisov. Omogoča zaposlenim in deležnikom, da varno in zaupno opozorijo na neprimerno ravnanje.",
+        "category": "general"
+      },
+      {
+        "question": "Ali lahko prijavim anonimno?",
+        "answer": "Da, naša platforma podpira anonimno prijavljanje. Pri anonimnem prijavljanju vaša identiteta ne bo zabeležena ali deljena. Vendar pa lahko zagotovitev kontaktnih podatkov pomaga preiskovalcem pri postavljanju dodatnih vprašanj, če je potrebno.",
+        "category": "privacy"
+      },
+      {
+        "question": "Kaj se zgodi po oddaji prijave?",
+        "answer": "Po oddaji boste prejeli identifikacijsko številko za spremljanje napredka vaše prijave. Vašo prijavo bo pregledala ustrezna ekipa, po potrebi preiskana, in prejeli boste posodobitve preko sistema za spremljanje.",
+        "category": "process"
+      },
+      {
+        "question": "Ali so moji podatki varni in zaupni?",
+        "answer": "Absolutno. Vse prijave so šifrirane in varno shranjene. Dostop je omejen samo na pooblaščeno osebje. Sledimo strogim protokolom za varstvo podatkov in skladimo z veljavnimi predpisi o zasebnosti.",
+        "category": "privacy"
+      },
+      {
+        "question": "Katere vrste problemov lahko prijavim?",
+        "answer": "Lahko prijavite različne vrste nepravilnosti, vključno s prevaro, nadlegovanjem, diskriminacijo, kršitvami varnosti, etičnimi kršitvami, okoljskimi pomisleki in drugimi kršitvami politik. Če niste prepričani, je bolje prijaviti in pustiti ekipi, da določi, ali je potrebno ukrepanje.",
+        "category": "general"
+      },
+      {
+        "question": "Ali se bom soočil z maščevanjem za prijavljanje?",
+        "answer": "Maščevanje proti posameznikom, ki prijavljajo v dobri veri, je strogo prepovedano in nezakonito v večini jurisdikcij. Organizacije imajo politike za zaščito prijaviteljev pred maščevanjem.",
+        "category": "privacy"
+      },
+      {
+        "question": "Kako dolgo običajno traja preiskava?",
+        "answer": "Časi preiskave se razlikujejo glede na zapletenost problema. Preprostejši problemi se lahko rešijo v nekaj dneh, medtem ko lahko zapletene preiskave trajajo tedne ali mesece. Preko sistema za spremljanje boste prejemali redne posodobitve.",
+        "category": "process"
+      },
+      {
+        "question": "Ali lahko po oddaji zagotovim dodatne informacije?",
+        "answer": "Da, lahko uporabite svojo identifikacijsko številko za dostop do svoje prijave in komunicirate s preiskovalci. Po potrebi lahko tudi zahtevajo dodatne informacije za preiskavo.",
+        "category": "technical"
+      },
+      {
+        "question": "Katere dokaze naj vključim v svojo prijavo?",
+        "answer": "Vključite vse relevantne dokumente, e-pošte, fotografije ali druge dokaze, ki podpirajo vašo prijavo. Vendar pa vključite samo informacije, do katerih imate legitimen dostop. Ne kršite varnostnih protokolov za pridobitev dokazov.",
+        "category": "general"
+      },
+      {
+        "question": "Kaj če sem pozabil svojo identifikacijsko številko?",
+        "answer": "Če ste ob oddaji prijave navedli e-poštni naslov, bi morali prejeti potrditveno e-pošto z vašo identifikacijsko številko. Če ste prijavili anonimno brez e-pošte, boste morali kontaktirati podporo za pomoč.",
+        "category": "technical"
+      },
+      {
+        "question": "Ali lahko prijavim probleme, ki niso neposredno povezani z mojo organizacijo?",
+        "answer": "Ta platforma je namenjena notranjemu organizacijskemu prijavljanju. Za zunanje probleme razmislite o kontaktiranju ustreznih regulatornih organov, organov pregona ali drugih primernih agencij.",
+        "category": "general"
+      },
+      {
+        "question": "Kaj če več ljudi prijavi isti problem?",
+        "answer": "Več prijav o istem problemu pomaga vzpostaviti vzorce in zagotavlja različne perspektive. Vsaka prijava je dragocena in bo obravnavana kot del celotne preiskave.",
+        "category": "process"
+      }
+    ]
+  },
+  "language": {
+    "switch": "Preklopite jezik",
+    "english": "Angleščina",
+    "slovenian": "Slovenščina"
+  },
+  "header": {
+    "portal": "Portal za prijavljanje kršitev",
+    "secure": "Varno in zaupno"
+  }
+}

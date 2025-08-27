@@ -1,0 +1,298 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "clear": "Clear",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "copy": "Copy",
+    "tryAgain": "Try Again",
+    "goHome": "Go Home"
+  },
+  "home": {
+    "submitReport": {
+      "title": "Submit Report",
+      "subtitle": "Report concerns safely",
+      "description": "Submit your concerns through our secure and confidential reporting system. Your report will be handled with complete discretion."
+    },
+    "trackReport": {
+      "title": "Track Report",
+      "subtitle": "Check report status",
+      "description": "Use your tracking ID to check the status of your submitted report and view any updates from our team."
+    },
+    "questions": {
+      "title": "Questions & FAQ",
+      "subtitle": "Get help and answers",
+      "description": "Find answers to common questions about the reporting process, privacy protection, and investigation procedures.",
+      "search": "Search questions...",
+      "categories": {
+        "all": "All Questions",
+        "general": "General",
+        "privacy": "Privacy & Security",
+        "process": "Process",
+        "technical": "Technical"
+      },
+      "noResults": {
+        "title": "No questions found",
+        "message": "Try adjusting your search terms or category filter."
+      },
+      "contact": {
+        "title": "Still have questions?",
+        "message": "If you couldn't find the answer you're looking for, don't hesitate to reach out.",
+        "button": "Contact Support"
+      },
+      "faqs": [
+        {
+          "question": "What is whistleblowing?",
+          "answer": "Whistleblowing is the act of reporting misconduct, illegal activities, or violations of company policies or regulations. It allows employees and stakeholders to raise concerns about wrongdoing in a safe and confidential manner.",
+          "category": "general"
+        },
+        {
+          "question": "Can I submit a report anonymously?",
+          "answer": "Yes, our platform supports anonymous reporting. When submitting anonymously, your identity will not be recorded or shared. However, providing contact information can help investigators ask follow-up questions if needed.",
+          "category": "privacy"
+        },
+        {
+          "question": "What happens after I submit a report?",
+          "answer": "After submission, you'll receive a tracking ID to monitor your report's progress. Your report will be reviewed by the appropriate team, investigated if necessary, and you'll receive updates through the tracking system.",
+          "category": "process"
+        },
+        {
+          "question": "Is my information secure and confidential?",
+          "answer": "Absolutely. All reports are encrypted and stored securely. Access is limited to authorized personnel only. We follow strict data protection protocols and comply with applicable privacy regulations.",
+          "category": "privacy"
+        },
+        {
+          "question": "What types of issues can I report?",
+          "answer": "You can report various types of misconduct including fraud, harassment, discrimination, safety violations, ethical breaches, environmental concerns, and other policy violations. If you're unsure, it's better to report and let the team determine if action is needed.",
+          "category": "general"
+        },
+        {
+          "question": "Will I face retaliation for reporting?",
+          "answer": "Retaliation against individuals who report in good faith is strictly prohibited and illegal in most jurisdictions. Organizations have policies in place to protect whistleblowers from retaliation.",
+          "category": "privacy"
+        },
+        {
+          "question": "How long does an investigation typically take?",
+          "answer": "Investigation timelines vary depending on the complexity of the issue. Simple matters may be resolved within days, while complex investigations can take weeks or months. You'll receive regular updates through the tracking system.",
+          "category": "process"
+        },
+        {
+          "question": "Can I provide additional information after submitting?",
+          "answer": "Yes, you can use your tracking ID to access your report and communicate with investigators. They may also request additional information if needed for the investigation.",
+          "category": "technical"
+        },
+        {
+          "question": "What evidence should I include with my report?",
+          "answer": "Include any relevant documents, emails, photos, or other evidence that supports your report. However, only include information you have legitimate access to. Don't break security protocols to obtain evidence.",
+          "category": "general"
+        },
+        {
+          "question": "What if I forgot my tracking ID?",
+          "answer": "If you provided an email address when submitting your report, you should have received a confirmation email with your tracking ID. If you submitted anonymously without an email, you'll need to contact support for assistance.",
+          "category": "technical"
+        },
+        {
+          "question": "Can I report issues not directly related to my organization?",
+          "answer": "This platform is designed for internal organizational reporting. For external issues, consider contacting relevant regulatory authorities, law enforcement, or other appropriate agencies.",
+          "category": "general"
+        },
+        {
+          "question": "What if multiple people report the same issue?",
+          "answer": "Multiple reports about the same issue help establish patterns and provide different perspectives. Each report is valuable and will be considered as part of the overall investigation.",
+          "category": "process"
+        }
+      ]
+    },
+    "footer": {
+      "contact": "Need help? Contact us at"
+    },
+    "hero": {
+      "secureConfidential": "Secure & Confidential",
+      "available247": "24/7 Available",
+      "howItWorks": "How It Works",
+      "howItWorksSubtitle": "Simple, secure, and confidential reporting in three easy steps",
+      "readyToMakeDifference": "Ready to Make a Difference?",
+      "yourVoiceMatters": "Your voice matters. Report concerns safely and help create a better workplace for everyone."
+    }
+  },
+  "navigation": {
+    "submitReport": {
+      "title": "Submit Report",
+      "description": "Report concerns safely and confidentially"
+    },
+    "trackReport": {
+      "title": "Track Report",
+      "description": "Check the status of your report"
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Get help and find answers"
+    },
+    "secureConfidential": "Secure & Confidential",
+    "mobileMenu": {
+      "securityTitle": "Secure & Confidential",
+      "securityDescription": "All reports are encrypted and protected"
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "legalPrivacy": "Legal & Privacy",
+    "privacyPolicy": "Privacy Policy",
+    "confidentialText": "All reports are handled confidentially and in accordance with applicable laws.",
+    "allRightsReserved": "All rights reserved.",
+    "poweredBy": "Powered by Zaupy Forms",
+    "secure": "Secure"
+  },
+  "form": {
+    "title": "Submit a Report",
+    "subtitle": "Your voice matters. Report concerns safely and confidentially.",
+    "category": {
+      "label": "Category",
+      "placeholder": "Select a category...",
+      "helper": "Choose the category that best describes your report"
+    },
+    "subject": {
+      "label": "Subject",
+      "placeholder": "Brief description of the issue...",
+      "helper": "Provide a clear, concise subject for your report (5-500 characters)"
+    },
+    "description": {
+      "label": "Description",
+      "placeholder": "Provide detailed information about the incident...",
+      "helper": "Describe the incident in detail. Include dates, locations, people involved, and any relevant context (10-5000 characters)"
+    },
+    "priority": {
+      "label": "Priority Level",
+      "placeholder": "Select priority level...",
+      "helper": "How urgent is this matter?",
+      "low": "Low Priority",
+      "medium": "Medium Priority",
+      "high": "High Priority",
+      "urgent": "Urgent"
+    },
+    "anonymous": {
+      "label": "Reporting Preference",
+      "checkbox": "Submit this report anonymously",
+      "helper": "Anonymous reports help protect your identity but may limit follow-up communication."
+    },
+    "files": {
+      "label": "Supporting Documents",
+      "helper": "Upload any relevant documents, images, or evidence that support your report.",
+      "dragText": "Drag and drop or click to select files",
+      "restrictions": "Max {maxFiles} files, {maxSize}MB each. Allowed: {types}"
+    },
+    "tracking": {
+      "label": "Report Tracking",
+      "public": {
+        "title": "Public Tracking",
+        "description": "Your report can be tracked using only the tracking ID. Anyone with the ID can view the status."
+      },
+      "private": {
+        "title": "Private Tracking",
+        "description": "Your report requires both the tracking ID and a password to view the status.",
+        "passwordLabel": "Tracking Password",
+        "passwordPlaceholder": "Enter a secure password...",
+        "passwordHelper": "Choose a password to protect your report tracking. You'll need this along with your tracking ID to check the status."
+      }
+    },
+    "privacy": {
+      "title": "Your Privacy is Protected",
+      "description": "All reports are handled confidentially. Your personal information is protected and will only be used to investigate and address your concerns. Anonymous reports provide additional privacy protection.",
+      "confidential": "All reports are handled confidentially",
+      "noIdentity": "You don't need to reveal your identity",
+      "anonymousProtected": "Anonymous reporters are not disclosed",
+      "secureEncrypted": "Secure encrypted communication"
+    },
+    "submit": {
+      "button": "Submit Report",
+      "submitting": "Submitting...",
+      "clear": "Clear Form"
+    },
+    "whatToReport": {
+      "title": "What to Report"
+    },
+    "footer": {
+      "afterSubmission": "After submission, you'll receive a tracking ID to monitor the status of your report.",
+      "keepSafe": "Keep this information safe as it's the only way to track your submission.",
+      "goodFaith": "Reports should be submitted in good faith regarding their content."
+    }
+  },
+  "success": {
+    "title": "Report Submitted Successfully",
+    "subtitle": "Thank you for bringing this matter to our attention. Your report has been received and will be reviewed promptly.",
+    "tracking": {
+      "title": "Tracking Information",
+      "subtitle": "Save this information to track the status of your report",
+      "idLabel": "Your Tracking ID",
+      "important": "Important:",
+      "instructions": [
+        "Keep this tracking ID safe - it's your only way to check the status of your report",
+        "You can bookmark this page or save the tracking ID separately",
+        "Use the tracking form to check updates on your report"
+      ]
+    },
+    "nextSteps": {
+      "title": "What Happens Next?",
+      "review": {
+        "title": "Review",
+        "description": "Your report will be reviewed by the appropriate team within 2-3 business days."
+      },
+      "investigation": {
+        "title": "Investigation",
+        "description": "If needed, a thorough investigation will be conducted with appropriate confidentiality measures."
+      },
+      "resolution": {
+        "title": "Resolution",
+        "description": "Appropriate action will be taken based on the findings, and you'll be updated via the tracking system."
+      }
+    },
+    "actions": {
+      "track": "Track Your Report",
+      "submitAnother": "Submit Another Report"
+    },
+    "contact": "For questions about this process, contact: {email}"
+  },
+  "errors": {
+    "configError": "Configuration Error",
+    "configErrorDescription": "Unable to load form configuration.",
+    "missingTracking": "Missing Tracking Information",
+    "missingTrackingDescription": "No tracking ID was provided. This page should only be accessed after successfully submitting a report.",
+    "submissionFailed": "Submission Failed",
+    "validationFailed": "Please correct the following errors:",
+    "trackingFailed": "Failed to track report",
+    "networkError": "Network error. Please check your connection and try again.",
+    "serverError": "Server error. Please try again later.",
+    "fileUploadError": "File upload failed. Please try again.",
+    "fileSizeError": "File size exceeds {maxSize}MB limit",
+    "fileTypeError": "File type {extension} is not allowed",
+    "tooManyFiles": "Too many files (max {maxFiles})"
+  },
+  "validation": {
+    "required": "This field is required",
+    "tooShort": "Must be at least {min} characters",
+    "tooLong": "Must be less than {max} characters",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidSubdomain": "Invalid subdomain format",
+    "categoryRequired": "Please select a valid category",
+    "trackingModeRequired": "Please select a tracking mode",
+    "passwordRequired": "Password is required for private tracking",
+    "passwordTooShort": "Password must be at least 6 characters"
+  },
+  "footer": {
+    "copyright": "© {year} {company}. All rights reserved.",
+    "poweredBy": "Powered by Zaupy Forms",
+    "secure": "Secure",
+    "confidential": "All reports are handled confidentially and in accordance with applicable laws.",
+    "privacyPolicy": "Privacy Policy",
+    "legalPrivacy": "Legal & Privacy",
+    "contact": "Contact"
+  },
+  "header": {
+    "portal": "Whistleblowing Portal",
+    "secure": "Secure & Confidential"
+  }
+}
