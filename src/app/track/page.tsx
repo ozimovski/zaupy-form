@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { useFormConfig } from '@/hooks/useFormConfig'
@@ -17,14 +17,14 @@ import { dashboardApi } from '@/lib/api'
 import type { ReportTrackingResponse } from '@/types'
 import { DEFAULT_SUBDOMAIN } from '@/lib/constants'
 import { 
-  CheckCircle, 
+  Search, 
   Info, 
   Clock, 
   MessageSquare, 
   AlertTriangle 
 } from 'lucide-react'
 
-export default function TrackPage() {
+function TrackPageContent() {
   const t = useTranslations()
   const searchParams = useSearchParams()
   const initialTrackingId = searchParams.get('trackingId') || ''
@@ -93,7 +93,7 @@ export default function TrackPage() {
             <div className="max-w-2xl mx-auto px-6 py-12">
               <div className="text-center mb-12">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-full mb-4">
-                  <CheckCircle className="w-8 h-8 text-primary-600" />
+                  <Search className="w-8 h-8 text-primary-600" />
                 </div>
                 <h1 className="text-3xl font-medium text-gray-900 mb-3">{t('tracking.title')}</h1>
                 <p className="text-lg text-gray-600">
@@ -175,7 +175,7 @@ export default function TrackPage() {
                         {/* Status Header */}
                         <div className="text-center">
                           <div className="inline-flex items-center justify-center w-12 h-12 bg-green-50 rounded-full mb-3">
-                            <CheckCircle className="w-6 h-6 text-green-600" />
+                            <Info className="w-6 h-6 text-green-600" />
                           </div>
                           <h3 className="text-xl font-medium text-gray-900 mb-2">{t('tracking.found.title')}</h3>
                           <StatusBadge status={trackingResult.report.status} />
@@ -287,4 +287,14 @@ export default function TrackPage() {
   )
 }
 
-
+export default function TrackPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <LoadingSpinner size="lg" />
+      </div>
+    }>
+      <TrackPageContent />
+    </Suspense>
+  )
+}
