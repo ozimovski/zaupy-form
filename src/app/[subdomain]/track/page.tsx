@@ -17,6 +17,7 @@ import type { ReportTrackingResponse } from '@/types'
 export default function TrackReportPage() {
   const params = useParams()
   const subdomain = params.subdomain as string
+  const { t } = useTranslation()
   
   const { config, loading, error } = useFormConfig(subdomain)
   
@@ -258,3 +259,7 @@ export default function TrackReportPage() {
     </ConfigProvider>
   )
 }
+function useTranslation(): { t: any } {
+  throw new Error('Function not implemented.')
+}
+
