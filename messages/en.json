@@ -256,6 +256,29 @@
     },
     "contact": "For questions about this process, contact: {email}"
   },
+  "trackingHelp": {
+    "title": "Need Help?",
+    "lostTrackingId": {
+      "title": "Lost your tracking ID?",
+      "description": "If you can't find your tracking ID, you can submit a new question through our system."
+    },
+    "reportNotFound": {
+      "title": "Report not found?",
+      "description": "Check that you've entered the correct tracking ID and password (if required)."
+    },
+    "contact": "Contact:"
+  },
+  "trackingResults": {
+    "title": "Report Status",
+    "subtitle": "Current status of your report",
+    "reportDetails": "Report Details",
+    "trackingId": "Tracking ID:",
+    "subject": "Subject:",
+    "status": "Status:",
+    "submitted": "Submitted:",
+    "lastUpdated": "Last Updated:",
+    "updatesComments": "Updates & Comments"
+  },
   "errors": {
     "configError": "Configuration Error",
     "configErrorDescription": "Unable to load form configuration.",

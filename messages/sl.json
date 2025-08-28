@@ -139,6 +139,29 @@
       "trackReport": "Spremljaj prijavo",
       "submitAnother": "Pošlji novo prijavo"
     },
+    "trackingHelp": {
+      "title": "Potrebujete pomoč?",
+      "lostTrackingId": {
+        "title": "Ste izgubili identifikacijsko številko?",
+        "description": "Če ne najdete svoje identifikacijske številke, lahko pošljete novo vprašanje preko našega sistema."
+      },
+      "reportNotFound": {
+        "title": "Prijave ni mogoče najti?",
+        "description": "Preverite, ali ste vnesli pravilno identifikacijsko številko in geslo (če je potrebno)."
+      },
+      "contact": "Kontakt:"
+    },
+    "trackingResults": {
+      "title": "Status prijave",
+      "subtitle": "Trenutni status vaše prijave",
+      "reportDetails": "Podrobnosti prijave",
+      "trackingId": "Identifikacijska številka:",
+      "subject": "Zadeva:",
+      "status": "Status:",
+      "submitted": "Poslano:",
+      "lastUpdated": "Zadnja posodobitev:",
+      "updatesComments": "Posodobitve in komentarji"
+    },
     "errors": {
       "configError": "Napaka konfiguracije",
       "configErrorDescription": "Ni možno naložiti konfiguracije obrazca.",

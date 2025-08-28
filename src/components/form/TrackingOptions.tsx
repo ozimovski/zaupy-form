@@ -27,21 +27,23 @@ export function TrackingOptions({
 }: TrackingOptionsProps) {
   const t = useTranslations()
   
-  if (!enableTracking) {
-    return null
-  }
-
   const hasPublicTracking = trackingModes.includes('public')
   const hasPrivateTracking = trackingModes.includes('private')
 
   // If only one mode is available, auto-select it
   React.useEffect(() => {
+    if (!enableTracking) return
+    
     if (hasPublicTracking && !hasPrivateTracking && trackingMode !== 'public') {
       onTrackingModeChange('public')
     } else if (hasPrivateTracking && !hasPublicTracking && trackingMode !== 'private') {
       onTrackingModeChange('private')
     }
-  }, [hasPublicTracking, hasPrivateTracking, trackingMode, onTrackingModeChange])
+  }, [enableTracking, hasPublicTracking, hasPrivateTracking, trackingMode, onTrackingModeChange])
+
+  if (!enableTracking) {
+    return null
+  }
 
   return (
     <div className="space-y-4">

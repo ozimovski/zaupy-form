@@ -48,7 +48,7 @@ export default async function RootLayout({
         {/* Note: In development, Next.js uses eval for HMR; avoid strict CSP here. Add CSP via headers in production. */}
       </head>
       <body className={nunito.className}>
-        <NextIntlClientProvider messages={messages} locale={locale}>
+        <NextIntlClientProvider messages={messages as any} locale={locale}>
           {children}
         </NextIntlClientProvider>
       </body>

@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     const contentType = request.headers.get('content-type') || ''
     
     let body: string | FormData
-    let forwardHeaders: Record<string, string> = {
+    const forwardHeaders: Record<string, string> = {
       'Accept': 'application/json',
     }
 

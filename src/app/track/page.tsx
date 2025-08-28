@@ -214,14 +214,14 @@ export default function TrackPage() {
                         </div>
                         
                         {/* Timeline/Updates */}
-                        {trackingResult.report.comments && trackingResult.report.comments.length > 0 && (
+                        {trackingResult.report?.comments && trackingResult.report.comments.length > 0 && (
                           <div>
                             <h3 className="text-lg font-medium text-gray-900 mb-6">{t('tracking.timeline.title')}</h3>
                             <div className="space-y-4">
-                              {trackingResult.report.comments.filter(comment => !comment.isInternal).map((comment, index) => (
+                              {trackingResult.report.comments.filter(comment => !comment.isInternal).map((comment, index, filteredComments) => (
                                 <div key={index} className="relative pl-8">
                                   <div className="absolute left-0 top-1 w-2 h-2 bg-blue-500 rounded-full"></div>
-                                  {index !== trackingResult.report.comments.filter(c => !c.isInternal).length - 1 && (
+                                  {index !== filteredComments.length - 1 && (
                                     <div className="absolute left-0.5 top-3 w-0.5 h-full bg-gray-200"></div>
                                   )}
                                   <div className="bg-white border border-gray-200 rounded-lg p-4">
@@ -244,7 +244,7 @@ export default function TrackPage() {
                         )}
 
                         {/* No Updates Message */}
-                        {(!trackingResult.report.comments || trackingResult.report.comments.filter(c => !c.isInternal).length === 0) && (
+                        {(!trackingResult.report?.comments || trackingResult.report.comments.filter(c => !c.isInternal).length === 0) && (
                           <div className="text-center py-8">
                             <div className="inline-flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full mb-3">
                               <MessageSquare className="w-6 h-6 text-gray-400" />

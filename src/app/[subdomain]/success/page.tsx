@@ -179,14 +179,14 @@ export default function SuccessPage() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {config.formSettings.enableTracking && (
-                <Button variant="outline" asChild>
+                <Button variant="outline">
                   <Link href={`/${subdomain}/track`}>
                     Track Your Report
                   </Link>
                 </Button>
               )}
               
-              <Button variant="outline" asChild>
+              <Button variant="outline">
                 <Link href={`/${subdomain}`}>
                   Submit Another Report
                 </Link>

@@ -19,7 +19,7 @@ export function useLocale() {
     
     // Use window.location.href for immediate page reload with new locale
     window.location.href = `${pathname}${query}`
-  }, [pathname])
+  }, [pathname, searchParams])
   
   return {
     currentLocale,

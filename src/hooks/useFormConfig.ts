@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { dashboardApi } from '@/lib/api'
 import type { PublicFormConfig } from '@/types'
 
@@ -14,7 +14,7 @@ export function useFormConfig(subdomain: string): UseFormConfigResult {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  const fetchConfig = async () => {
+  const fetchConfig = useCallback(async () => {
     if (!subdomain) {
       setError('Subdomain is required')
       setLoading(false)
@@ -32,11 +32,11 @@ export function useFormConfig(subdomain: string): UseFormConfigResult {
     } finally {
       setLoading(false)
     }
-  }
+  }, [subdomain])
 
   useEffect(() => {
     fetchConfig()
-  }, [subdomain])
+  }, [fetchConfig])
 
   const refetch = async () => {
     await fetchConfig()

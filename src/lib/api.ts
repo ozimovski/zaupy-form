@@ -76,7 +76,7 @@ class DashboardApiClient {
       console.log('API Client: Submitting data:', submissionData)
 
       let requestBody: string | FormData
-      let headers: Record<string, string> = {}
+      const headers: Record<string, string> = {}
 
       // Use FormData if files are present, otherwise use JSON
       if (data.files && data.files.length > 0) {

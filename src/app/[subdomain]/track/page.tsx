@@ -174,20 +174,20 @@ export default function TrackReportPage() {
 
                   <Card className="shadow-lg border-0">
                     <CardHeader className="bg-accent-600 text-white rounded-t-lg">
-                      <CardTitle className="text-lg">Need Help?</CardTitle>
+                      <CardTitle className="text-lg">{t('trackingHelp.title')}</CardTitle>
                     </CardHeader>
                     <CardContent className="p-6">
                       <div className="space-y-3 text-sm text-gray-700">
-                        <p><strong>Lost your tracking ID?</strong></p>
-                        <p>If you can't find your tracking ID, you can submit a new question through our system.</p>
+                        <p><strong>{t('trackingHelp.lostTrackingId.title')}</strong></p>
+                        <p>{t('trackingHelp.lostTrackingId.description')}</p>
                         
-                        <p><strong>Report not found?</strong></p>
-                        <p>Check that you've entered the correct tracking ID and password (if required).</p>
+                        <p><strong>{t('trackingHelp.reportNotFound.title')}</strong></p>
+                        <p>{t('trackingHelp.reportNotFound.description')}</p>
                         
                         {config.content.contactEmail && (
                           <div className="mt-4 pt-4 border-t">
                             <p className="text-xs">
-                              <strong>Contact:</strong>{' '}
+                              <strong>{t('trackingHelp.contact')}</strong>{' '}
                               <a 
                                 href={`mailto:${config.content.contactEmail}`}
                                 className="text-primary-600 hover:text-primary-800"
@@ -208,32 +208,32 @@ export default function TrackReportPage() {
                 <div className="mt-8">
                   <Card className="shadow-lg border-0">
                     <CardHeader className="bg-primary-600 text-white rounded-t-lg">
-                      <CardTitle className="text-xl">Report Status</CardTitle>
+                      <CardTitle className="text-xl">{t('trackingResults.title')}</CardTitle>
                       <CardDescription className="text-primary-100">
-                        Current status of your report
+                        {t('trackingResults.subtitle')}
                       </CardDescription>
                     </CardHeader>
                     
                     <CardContent className="p-8">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                          <h3 className="font-medium text-gray-900 mb-2">Report Details</h3>
+                          <h3 className="font-medium text-gray-900 mb-2">{t('trackingResults.reportDetails')}</h3>
                           <div className="space-y-2 text-sm">
-                            <div><strong>Tracking ID:</strong> {trackingResult.report.trackingId}</div>
-                            <div><strong>Subject:</strong> {trackingResult.report.subject}</div>
-                            <div><strong>Status:</strong> 
+                            <div><strong>{t('trackingResults.trackingId')}</strong> {trackingResult.report.trackingId}</div>
+                            <div><strong>{t('trackingResults.subject')}</strong> {trackingResult.report.subject}</div>
+                            <div><strong>{t('trackingResults.status')}</strong> 
                               <span className="ml-2 px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
                                 {trackingResult.report.status}
                               </span>
                             </div>
-                            <div><strong>Submitted:</strong> {new Date(trackingResult.report.createdAt).toLocaleDateString()}</div>
-                            <div><strong>Last Updated:</strong> {new Date(trackingResult.report.updatedAt).toLocaleDateString()}</div>
+                            <div><strong>{t('trackingResults.submitted')}</strong> {new Date(trackingResult.report.createdAt).toLocaleDateString()}</div>
+                            <div><strong>{t('trackingResults.lastUpdated')}</strong> {new Date(trackingResult.report.updatedAt).toLocaleDateString()}</div>
                           </div>
                         </div>
                         
                         {trackingResult.report.comments && trackingResult.report.comments.length > 0 && (
                           <div>
-                            <h3 className="font-medium text-gray-900 mb-2">Updates & Comments</h3>
+                            <h3 className="font-medium text-gray-900 mb-2">{t('trackingResults.updatesComments')}</h3>
                             <div className="space-y-3">
                               {trackingResult.report.comments.filter(comment => !comment.isInternal).map((comment, index) => (
                                 <div key={index} className="bg-gray-50 rounded-lg p-3">
