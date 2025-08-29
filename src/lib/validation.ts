@@ -180,3 +180,122 @@ export function validateTrackingLookup(data: any) {
     }
   }
 }
+
+// Public Case Submission API validation schema
+export const caseSubmissionSchema = z.object({
+  subdomain: z
+    .string()
+    .min(3, 'Subdomain must be at least 3 characters')
+    .max(63, 'Subdomain must be less than 63 characters')
+    .regex(/^[a-z0-9]([a-z0-9-]*[a-z0-9])?$/, 'Invalid subdomain format'),
+  
+  title: z
+    .string()
+    .min(5, 'Title must be at least 5 characters')
+    .max(500, 'Title must be less than 500 characters')
+    .trim(),
+  
+  description: z
+    .string()
+    .min(10, 'Description must be at least 10 characters')
+    .max(5000, 'Description must be less than 5000 characters')
+    .trim(),
+  
+  typeKey: z
+    .string()
+    .optional()
+    .default('complaint'),
+  
+  categoryKey: z
+    .string()
+    .min(1, 'Category is required'),
+  
+  priorityKey: z
+    .string()
+    .optional()
+    .default('medium'),
+  
+  severityKey: z
+    .string()
+    .optional()
+    .default('medium'),
+  
+  isAnonymous: z
+    .boolean()
+    .optional()
+    .default(true),
+  
+  visibility: z
+    .enum(['public', 'internal', 'restricted'])
+    .optional()
+    .default('internal'),
+  
+  reporterName: z
+    .string()
+    .max(255, 'Reporter name must be less than 255 characters')
+    .optional(),
+  
+  reporterEmail: z
+    .string()
+    .email('Invalid email format')
+    .max(320, 'Email must be less than 320 characters')
+    .optional(),
+  
+  reporterPhone: z
+    .string()
+    .max(50, 'Phone number must be less than 50 characters')
+    .optional(),
+  
+  tags: z
+    .array(z.string().max(50, 'Tag must be less than 50 characters'))
+    .max(20, 'Maximum 20 tags allowed')
+    .optional()
+    .default([])
+})
+
+// Conditional validation for non-anonymous submissions
+export const conditionalCaseSubmissionSchema = caseSubmissionSchema.refine(
+  (data) => {
+    if (data.isAnonymous === false && !data.reporterEmail) {
+      return false
+    }
+    return true
+  },
+  {
+    message: 'Reporter email is required for non-anonymous submissions',
+    path: ['reporterEmail'],
+  }
+)
+
+// Validation helper for case submission
+export function validateCaseSubmission(data: any) {
+  try {
+    return {
+      success: true,
+      data: conditionalCaseSubmissionSchema.parse(data),
+      errors: {},
+    }
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      const errors: Record<string, string> = {}
+      error.errors.forEach((err) => {
+        if (err.path.length > 0) {
+          errors[err.path[0] as string] = err.message
+        }
+      })
+      return {
+        success: false,
+        data: null,
+        errors,
+      }
+    }
+    return {
+      success: false,
+      data: null,
+      errors: { general: 'Validation failed' },
+    }
+  }
+}
+
+// Type inference
+export type CaseSubmissionData = z.infer<typeof caseSubmissionSchema>

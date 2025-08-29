@@ -159,6 +159,45 @@ export interface ApiResponse<T = any> {
   message?: string
 }
 
+// Public Case Submission API Types
+export interface CaseSubmissionRequest {
+  subdomain: string
+  title: string
+  description: string
+  typeKey?: string
+  categoryKey: string
+  priorityKey?: string
+  severityKey?: string
+  isAnonymous?: boolean
+  visibility?: 'public' | 'internal' | 'restricted'
+  reporterName?: string
+  reporterEmail?: string
+  reporterPhone?: string
+  tags?: string[]
+}
+
+export interface CaseSubmissionResponse {
+  success: boolean
+  case?: {
+    id: string
+    caseNumber: string
+    title: string
+    status: string
+    createdAt: string
+  }
+  message?: string
+  error?: string
+}
+
+export interface RateLimitEntry {
+  count: number
+  resetTime: number
+}
+
+export interface RateLimitStorage {
+  [ip: string]: RateLimitEntry
+}
+
 // Theme Types
 export interface ThemeColors {
   primary: Record<string, string>

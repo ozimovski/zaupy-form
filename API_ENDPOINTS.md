@@ -88,7 +88,56 @@ files: [File objects]
 }
 ```
 
-### 3. Tracking API
+### 3. Public Case Submission API
+**Endpoint**: `POST /api/public/cases/submit`
+**Proxies to**: `POST /api/public/cases/submit` (Dashboard API)
+
+**Purpose**: Submit whistleblowing cases directly to the complaint management system
+
+**Features**:
+- ✅ Public access (no authentication required)
+- ✅ Rate limiting (5 submissions per 5 minutes per IP)
+- ✅ CORS support (cross-origin requests enabled)
+- ✅ Comprehensive validation with Zod
+- ✅ Company resolution via subdomain
+- ✅ Dictionary key-to-ID mapping
+- ✅ Anonymous support
+- ✅ Reporter information (optional)
+
+**Example Request**:
+```json
+POST /api/public/cases/submit
+Content-Type: application/json
+
+{
+  "subdomain": "devisium",
+  "title": "Safety violation in manufacturing area",
+  "description": "I observed unsafe working conditions in the manufacturing area that could lead to serious injuries.",
+  "categoryKey": "safety",
+  "priorityKey": "high",
+  "severityKey": "high",
+  "isAnonymous": true,
+  "visibility": "internal",
+  "tags": ["safety", "manufacturing", "urgent"]
+}
+```
+
+**Response**:
+```json
+{
+  "success": true,
+  "case": {
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "caseNumber": "DEV-2025-001",
+    "title": "Safety violation in manufacturing area",
+    "status": "triage",
+    "createdAt": "2025-01-11T10:30:00.000Z"
+  },
+  "message": "Case submitted successfully"
+}
+```
+
+### 4. Tracking API
 **Endpoint**: `GET /api/track/{trackingId}?password=optional`
 **Proxies to**: `GET /api/reports/track/{trackingId}?password=optional`
 
